@@ -1,0 +1,1 @@
+export { MaterialTableTemplate } from './MaterialTableTemplate'
