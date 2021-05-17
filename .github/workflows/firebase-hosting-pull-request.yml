@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm install
   build_and_preview:
+    needs: install_libs
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
